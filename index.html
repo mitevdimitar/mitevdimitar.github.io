@@ -3,7 +3,7 @@
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type"> 
 <style>
-body,html{margin:0;padding:0;height:100%;}
+body,html{margin:0;padding:0;height:auto;}
 body{background:#E3DFD2;box-shadow: inset 0 0 20vmin 0 #585247;}
 .wrap{
   position:relative;
@@ -112,20 +112,36 @@ a:hover div{
   opacity:1;
   transform:translatez(0px);
 }
+.welcome {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(26, 118, 141);
+}
 
 </style>
 </head>
-<body>
-
-<body bgcolor="#80ffff">
-
+<body onload="typeWriter()">
+<div class="welcome">  <h1 id="demo"></h1></div>
+<script>
+    var i = 0;
+    var txt = 'WELCOME TO THE WEBSITE OF MITEVS FAMILY, WE HOPE THAT YOU WILL ENJOY IT!';
+    var speed = 100;
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
 <span><span></span></span>
 <div class="wrap">
   <a href="Links/Mama.html"><div></div></a>
   <a href="Links/Tati.html"><div></div></a>
   <a href="Links/Stefi.html"><div></div></a>
   <a href="Links/Erika.html"><div></div></a>
-  <a href="index.html"><div></div></a>
+  <a href="Links/contacts.html"><div></div></a>
 </div>
 
 </body>

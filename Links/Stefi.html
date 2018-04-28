@@ -5,26 +5,31 @@
 <meta content="text/html; charset=UTF-8" http-equiv="content-type"> 
 <title>Стефунка</title>
 <style>
+    body {background-image: url('../Images/StefiBG.JPG');
+    background-size: 100%;}
 button.MyButton {
-width: 70px;
+width: 80px;
 padding: 5px;
 cursor: pointer;
 font-weight: bold;
 font-size: 150%;
-background: #3366cc;
-color: #fff;
-border: 1px solid #3366cc;
+/* background-image: url('../Images/Background.JPG');
+background-size: cover; */
+background: #E3DFD2;
+color:#585247;;
+border: 1px solid #585247;;
 border-radius: 5px;
 }
 button.MyButton:hover {
-color: #ffff00;
-background: #000;
+    color: transparent;
+/* color: #d4d49c; */
+background-image: url('../Images/Background.JPG');
+background-size: cover;
 border: 1px solid #fff;}
+
 img {
-    height: auto; 
-    width: auto; 
-    max-width: 450px; 
-    max-height: 450px;
+    width: 500px; 
+    height: 400px;
 }
 .vapros {
 color: #002966;
@@ -47,10 +52,10 @@ font-size: 22px
 </style>
 </head>
 
-<body bgcolor="##4dffff">
-<button class="MyButton" type="button" value="Back" onclick="window.location.href = '../index.html';">Back</button>
+<body>
+<button class="MyButton" type="button" value="Back" onclick="window.location.href = '../index.html';">Home</button>
 <div align="center">
-<img src="../Images/Stefi 1.JPG" title="new"/>
+<img src="../Images/Stefi 1.JPG" title="Стефи"/>
 </div>
 <p class="zaglavie">Име / Name: Стефи /Stefi [teti]</p>
 <p class="vapros">Коя зодия съм?</p>
