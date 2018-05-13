@@ -1,37 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Татичко</title>
 <style>
-      body {background-image: url('../Images/Stadium.jpg');
-    background-size: 125%;}
-button.MyButton {
-width: 80px;
-padding: 5px;
-cursor: pointer;
-font-weight: bold;
-font-size: 150%;
-/* background-image: url('../Images/Background.JPG');
-background-size: cover; */
-background: #E3DFD2;
-color:#585247;;
-border: 1px solid #585247;;
-border-radius: 5px;
-}
-button.MyButton:hover {
-    color: transparent;
-/* color: #d4d49c; */
-background-image: url('../Images/Background.JPG');
-background-size: cover;
-border: 1px solid #fff;}
+    body {width: 100vw; 
+    height: 100%;
+    margin-top: -1.5%;
+    margin-left: 0;
+  padding: 0;}
 
-img {
-   height: auto; 
+section > img {
+    height: auto; 
     width: auto; 
     max-width: 450px; 
     max-height: 450px;
+    position: relative;
+    padding: 50px 0 20px 20px;
 }
 .vapros {
 color: #002966;
@@ -46,31 +34,137 @@ font-style: italic;
 font-size: 18px
 }
 .zaglavie{
-color:  #002966;
+color: #4d0bb1;
 text-align: center;
 font-weight: bold;
-font-size: 22px
+font-size: 28px
 }
+header {
+    background-color:rgb(182, 222, 228);
+    background-image: url('../Images/header-sky.jpg');
+background-size: 100% 130%;
+background-repeat: no-repeat;
+border-bottom: 1px solid #acb7a6;
+height: 155px;
+width: 100%;
+margin: 0;
+  padding: 0;}
+#hidden-h1 {text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;}
+html {
+    width: 100vw; height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+ul, h1 {
+  margin: 0;
+  padding: 0;
+}
+#div-container {
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-image: url('../Images/ErikaBG1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.float-left {
+    float: left;
+position: relative;
+width: 40%;
+height: 100%;
+}
+#design-selection {background-color: rgb(48, 138, 221);
+width: 20%;}
+
+#design-selection h3 {
+    color: #ccc180;
+    font-size: 1.4em;
+    font-style: normal;
+    padding-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#design-selection a {
+    color: #fcf59b;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: normal;
+}
+a, a:link, a:visited, a:hover, a:active {
+    color: #ada364;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+ul {
+    list-style: none;
+}
+
+ul li {padding-bottom: 20px;
+text-align: center;}
+li>img { height: auto; 
+    width: auto;}
 </style>
 </head>
-
 <body>
-<button class="MyButton" type="button" value="Back" onclick="window.location.href = '../index.html';">Home</button>
-<div align="center">
-<img src="../Images/Tati 1.JPG" title="Tati"/>
+    <header>
+        <h1 id="hidden-h1">Mitev's Family Website</h1>
+    </header>
+        <div id="div-container">
+                <section class="float-left" id="design-selection">
+                        <h3 class="select">Select member of the Family:</h3>
+                        <nav role="navigation">
+                                <ul>
+                                     <li>
+                                        <a href="Tati.html" class="design-name"><img src="../Images/Tati.jpg" alt="Daddy" width="22" height="18">  Daddy</a>
+                                        </li>
+                                    <li>
+                                        <a href="Mama.html" class="design-name"><img src="../Images/Mama.JPG" alt="Mommy" width="22" height="18"> Mommy</a>
+                                        </li>   
+                                    <li>
+                                        <a href="Stefi.html" class="design-name"><img src="../Images/Stefi.JPG" alt="Stefi" width="22" height="18"> Stefi</a>
+                                        </li>
+                                    <li>
+                                        <a href="Erika.html" class="design-name"><img src="../Images/Erika.JPG" alt="Erika" width="22" height="18"> Erikche</a>
+                                        </li>   
+                                    <li>
+                                         <a href="" class="design-name">or... Go Home</a>
+                                        </li>  
+                                        <li><img src="../Images/curlBig.gif" alt="culrs"></li>
+                                        <li>
+                                         <a href="" class="design-name">Contact Us</a>
+                                        </li>  
+                                        </ul>   
+                                       
+                        </nav>
+                    </section>
+                <section class="float-left">
+                    <p class="zaglavie">Име / Name: Митко / Mitko [mkh]</p>
+                    <p class="vapros">Коя зодия съм?</p>
+                    <p class="otgovor">- Лъв</p>
+                    <p class="vapros">С какво обичам да се занимавам в свободното си време?</p>
+                    <p class="otgovor">- Да менажирам Манчестър Юнайтед и да прекарвам време с моите любими принцески.</p>
+                    <p class="vapros">Какво не бива да правите покрай мен?
+                    </p>
+                    <p class="otgovor">- Да крещите (Кога ли Ерикчето ще прочете това...).
+                    </p>
+                    <p class="vapros">Какво обичам да похапвам?</p>
+                    <p class="otgovor">- Сладкоооооооо</p>
+                        </section>
+        <section class="float-left">
+            <img src="../Images/Tati 1.JPG" title="Tati"/>
+</section>
 </div>
-<p class="zaglavie">Име / Name: Митко / Mitko [mkh]</p>
-<p class="vapros">Коя зодия съм?</p>
-<p class="otgovor">- Лъв</p>
-<p class="vapros">С какво обичам да се занимавам в свободното си време?</p>
-<p class="otgovor">- Да менажирам Манчестър Юнайтед и да прекарвам време с моите любими принцески.</p>
-<p class="vapros">Какво не бива да правите покрай мен?
-</p>
-<p class="otgovor">- Да крещите (Кога ли Ерикчето ще прочете това...).
-</p>
-<p class="vapros">Какво обичам да похапвам?</p>
-<p class="otgovor">- Сладкоооооооо</p>
-
 </body>
-
 </html> 
